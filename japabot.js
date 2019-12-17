@@ -23,9 +23,9 @@ const twitterMessage = async () => {
         //postToSlack(prettierDate + ' - ' + data[0].text)
         if (data[0].text.toLowerCase().includes('free')) {  // looks for keyword 'free' 
             // console.log('FREE MEAT');
-            postToSlack(prettierDate + ' - ' + data[0].text + '\nYES FREE MEAT :(');
+            postToSlack(prettierDate + '\n' + data[0].text + '\nYES FREE MEAT :(');
         } else {
-            postToSlack(prettierDate + ' - ' + data[0].text + '\nNO FREE MEAT :(');
+            postToSlack(prettierDate + '\n' + data[0].text + '\nNO FREE MEAT :(');
         }
 })
 } 
